@@ -7,16 +7,21 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<header id="site-header">
-			<div class="container" >
+			
+			<div class="container dropdown	"  id="nav-container">
 				<div class="row space-between">
-		
 					<h1>ESGI<span>.</span></h1>
-					<button>
+					<span class="dropbtn">
 						__<br>_
-					</button>
+					</span>
 				</div>
+
+				<div class="centring-left dropdown-content">
+					<?php wp_nav_menu(array(
+						'menu' =>'my-custom-men',
+						'menu_id' => 'top-menu',  
+					)) ?>
+				</div>
+
 			</div>
-			<?php wp_nav_menu(array(
-				'menu' =>'my-custom-men'
-			)) ?>
 		</header>
