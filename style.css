@@ -16,7 +16,6 @@ Tags: TPs   s
 .footer {
   background-color: #050A3A;
   height: 200px;
-  position: absolute;
   bottom: 0%;
   width: 100%;
   color: white;
@@ -35,6 +34,10 @@ Tags: TPs   s
 .row {
   display: flex;
   flex-wrap: wrap; }
+
+.image-card {
+  height: 400px;
+  width: 200px; }
 
 .container {
   max-width: var(--bessels);

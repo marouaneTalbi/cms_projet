@@ -5,6 +5,11 @@ $gutter: 24px;
 	flex-wrap: wrap;
 }
 
+.image-card{
+	height: 400px;
+	width: 200px;
+}
+
 .container{
 	max-width: var(--bessels);
     margin: auto;
