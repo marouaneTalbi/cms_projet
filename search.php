@@ -1,4 +1,3 @@
-<?php get_header() ?>
 
 <?php
 /*
@@ -16,6 +15,7 @@ Template Name: search
                 );
 
     $the_query = new WP_Query( $args );
+    
     if ( $the_query->have_posts() ) {
         _e("<h2 style='text-align:center'>Résultats de la recherche pour : ".get_query_var('s')."</h2>");
         while ( $the_query->have_posts() ) {

@@ -46,6 +46,18 @@ function about_actions($wp_customize){
 
 		]);
 
+
+		$wp_customize->add_setting('titre_home', [
+			'default' => 'A really professional structure for all your events!',
+		]);
+		
+		$wp_customize->add_control('titre_home', [
+			'section' => 'About-us',
+			'label' => 'Nouvau titre',
+			'priority' => 1,
+
+		]);
+
 		$wp_customize->add_setting('description_aboutus', [
 			'default' => 'Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution.',
 		]);
@@ -552,7 +564,6 @@ function contact_actions($wp_customize){
 		'priority' => 5,
     ]);
 
-
 		$wp_customize->add_setting('titre_contact', [
 			'default' => 'Contacts.',
 		]);
@@ -564,7 +575,7 @@ function contact_actions($wp_customize){
 		]);
 
 		$wp_customize->add_setting('description_contact', [
-			'default' => 'Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution. ',
+			'default' => 'A desire for a big big party or a very select congress? Contact us. ',
 		]);
 		
 		$wp_customize->add_control('description_contact', [
@@ -576,13 +587,79 @@ function contact_actions($wp_customize){
 		]);
 
 		$wp_customize->add_setting('img_add_contact', [
-			'default' => get_bloginfo('template_url').'/assets/images/9.png',
+			'default' => get_bloginfo('template_url').'/assets/images/10.png',
 		]);
 		
 		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'img_add_contact', [
 			'section' => 'Contact',
 			'label' => 'Nouvelle image'
 		]));
+
+
+		$wp_customize->add_setting('titre_contact1', [
+			'default' => 'Location.',
+		]);
+		
+		$wp_customize->add_control('titre_contact1', [
+			'section' => 'Contact',
+			'label' => 'Nouvau titre',
+			'priority' => 1,
+		]);
+
+		$wp_customize->add_setting('description_contact1', [
+			'default' => '242 Rue du Faubourg Saint-Antoine 75020 Paris FRANCE',
+		]);
+		
+		$wp_customize->add_control('description_contact1', [
+			'section' => 'Contact',
+			'label' => 'Nouvelle description',
+			'priority' => 3,
+			'type'=> 'textarea'
+
+		]);
+
+		$wp_customize->add_setting('titre_contact2', [
+			'default' => 'Manager.',
+		]);
+		
+		$wp_customize->add_control('titre_contact2', [
+			'section' => 'Contact',
+			'label' => 'Nouvau titre',
+			'priority' => 1,
+		]);
+
+		$wp_customize->add_setting('description_contact2', [
+			'default' => '+33 1 53 31 25 23 info@company.com. ',
+		]);
+		
+		$wp_customize->add_control('description_contact2', [
+			'section' => 'Contact',
+			'label' => 'Nouvelle description',
+			'priority' => 3,
+			'type'=> 'textarea'
+
+		]);
+
+		$wp_customize->add_setting('titre_contact3', [
+			'default' => 'CEO.',
+		]);
+		
+		$wp_customize->add_control('titre_contact3', [
+			'section' => 'Contact',
+			'label' => 'Nouvau titre',
+			'priority' => 1,
+		]);
+
+		$wp_customize->add_setting('description_contact3', [
+			'default' => '+33 1 53 31 25 25 ceo@company.com ',
+		]);
+		
+		$wp_customize->add_control('description_contact3', [
+			'section' => 'Contact',
+			'label' => 'Nouvelle description',
+			'priority' => 3,
+			'type'=> 'textarea'
+		]);
 
 
 

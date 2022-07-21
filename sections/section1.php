@@ -1,5 +1,8 @@
 
 <article class="single-post  col-offset-3" >
+
+
+<h1><?php echo get_theme_mod('titre_home','A really professional structure for all your events!' )?></h1>
     
     <?php // if(get_theme_mod( 'img_add_aboutus') != null){ ?>
         <div class="image-card" >
