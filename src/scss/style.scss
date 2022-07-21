@@ -14,14 +14,14 @@ Text Domain: ESGI
 Tags: TPs   s
 */  
 
-// @import 'vendor/normalize.css';
-// @import 'vendor/bootstrap.min.css';
 
-// @import 'partials/globals';
-// @import 'partials/identity-card';
-// @import 'partials/post-list';
-// @import 'partials/fonts';
-// @import 'partials/post-list';
-@import 'partials/footer';  
-@import 'partials/_grid';
+
+@import 'partials/fonts';
+@import 'partials/globals';
+@import 'partials/text-align';
+@import 'partials/flex';
+@import 'partials/section';
+@import 'partials/footer';
+@import 'partials/grid';
 @import 'partials/header';
+

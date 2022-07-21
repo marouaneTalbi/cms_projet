@@ -1,26 +1,50 @@
 .footer{
-	background-color:#050A3A ;
-	height: 200px;
+	background-color:$main-color;
     bottom: 0%;
-    width: 100%;
 	color: rgb(255, 255, 255);
-	padding:4vh;
+	padding:80px 0px;
+
+	p{
+		font-weight: 700;
+		font-size: rem(20);
+		line-height: 25px;
+	}
+
+	.logo{
+		width: 195.57px;
+		height: 60.26px;
+	}
+
+	small{
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	p{
+		color: white!important;
+	}
+
+	> div{
+		> div {
+			small {
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 38px;
+			}
+		}
+	}
+
+	nav{
+		a{
+			img{
+				margin-top: 30px;
+				margin-left: 20px;
+				height: 23.69px;
+			}
+		}
+	}
 }
-
-.right-text{
-	text-align: right;
-}
-
-.space-between{
-	justify-content: space-between;
-
-}
-
-.centring-left{
-    display: flex;
-    justify-content: end;
-}
-
 
 
 

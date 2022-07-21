@@ -8,19 +8,39 @@
 	<body <?php body_class(); ?>>
 		<header id="site-header">
 			
-			<div class="container dropdown	"  id="nav-container">
-				<div class="row space-between">
-					<h1>ESGI<span>.</span></h1>
-					<span class="dropbtn">
-						__<br>_
-					</span>
+			<div class="container dropdown">
+				<div class="row">
+                    <div class="col-12 d-space-between align-center">
+                        <a class="logo" href="/">
+                            <img src="<?= get_bloginfo('template_url').'/assets/svg/ESGI-logo.svg' ?>" alt="logo">
+                        </a>
+                        <button>
+                            <img src="<?= get_bloginfo('template_url').'/assets/svg/burger-menu.svg' ?>">
+                        </button>
+                    </div>
 				</div>
+            </div>
 
-				<div class="centring-left dropdown-content">
-					<?php wp_nav_menu(array(
-						'menu' =>'my-custom-men',
-						'menu_id' => 'top-menu',  
-					)) ?>
+
+            <div class="dropdown-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-space-between align-center">
+                            <a class="logo" href="/">
+                                <img src="<?= get_bloginfo('template_url').'/assets/svg/ESGI-logo-white.svg' ?>" alt="logo">
+                            </a>
+                            <button>
+                                <img src="<?= get_bloginfo('template_url').'/assets/svg/close.svg' ?>">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-space-between d-end">
+                        <?php wp_nav_menu(array(
+                            'menu' =>'my-custom-men',
+                            'menu_id' => 'top-menu',
+                        )) ?>
+                    </div>
 				</div>
 
 			</div>

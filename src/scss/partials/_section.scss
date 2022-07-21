@@ -1,0 +1,48 @@
+.section{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  img{
+    object-fit: cover;
+  }
+
+  &--first{
+    img{
+      width: 100%;
+      height: 531px;
+    }
+  }
+
+  .section--four{
+    img{
+      margin: 30px;
+    }
+  }
+
+  .section-service{
+    height: 380px;
+
+    p{
+      align-items: center;
+      font-weight: 600;
+      font-size: rem(25);
+      color: $main-color;
+      border-bottom: 2px solid #RRRR;
+
+    }
+  }
+
+  &--second{
+    .col-8{
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+    .img-second{
+      width: 300px;
+      height: 100%;
+      margin-right: 80px;
+    }
+
+}
