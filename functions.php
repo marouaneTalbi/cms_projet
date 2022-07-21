@@ -1,5 +1,5 @@
 <?php 
-add_theme_support('custom-logo');
+add_theme_support('about_actions');
 
 add_theme_support( 'post-thumbnails' );
 
@@ -16,8 +16,6 @@ function add_theme_css_and_js(){
 }
 add_action('wp_enqueue_scripts', 'add_theme_css_and_js');
 
-
-// add_action('customize_register', function (WP_Customize_Manager $wp_customize){
 
 add_action('customize_register', 'about_actions');
 
@@ -541,6 +539,52 @@ function parties_actions($wp_customize){
 			'type'=> 'textarea'
 
 		]);
+
+	}
+
+	add_action('customize_register', 'contact_actions');
+
+
+function contact_actions($wp_customize){
+
+    $wp_customize->add_section('Contact', [
+        'title' => 'Contact', 
+		'priority' => 5,
+    ]);
+
+
+		$wp_customize->add_setting('titre_contact', [
+			'default' => 'Contacts.',
+		]);
+		
+		$wp_customize->add_control('titre_contact', [
+			'section' => 'Contact',
+			'label' => 'Nouvau titre',
+			'priority' => 1,
+		]);
+
+		$wp_customize->add_setting('description_contact', [
+			'default' => 'Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution. ',
+		]);
+		
+		$wp_customize->add_control('description_contact', [
+			'section' => 'Contact',
+			'label' => 'Nouvelle description',
+			'priority' => 3,
+			'type'=> 'textarea'
+
+		]);
+
+		$wp_customize->add_setting('img_add_contact', [
+			'default' => get_bloginfo('template_url').'/assets/images/9.png',
+		]);
+		
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'img_add_contact', [
+			'section' => 'Contact',
+			'label' => 'Nouvelle image'
+		]));
+
+
 
 	}
 
